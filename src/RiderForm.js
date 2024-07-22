@@ -49,7 +49,7 @@ function RiderForm() {
           <div className="form-field">
             <label>
               Time:
-              <input type="text" name="time" value={rideDetails.time} onChange={handleChange} required />
+              <input type="datetime-local" name="time" value={rideDetails.time} onChange={handleChange} required />
             </label>
           </div>
           <div className="form-field">
