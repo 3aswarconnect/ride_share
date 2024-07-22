@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(500vh - 80px); /* Adjust height to fit below the nav bar */
+  height: calc(120vh - 80px); /* Adjust height to fit below the nav bar */
   background-color: #f0f8ff;
 }
 
