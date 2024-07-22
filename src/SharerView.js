@@ -31,8 +31,8 @@ function SharerView() {
               <div className="ride-card-row">
                 <strong>Bike:</strong> {ride.bike}
               </div>
-              <div className="ride-card-row">
-                <strong>Time:</strong> {ride.time}
+              <div className="ride-card-row time-row">
+                <strong>Time:</strong> <span className="ride-time">{ride.time}</span>
               </div>
               <div className="ride-card-row">
                 <strong>Destination:</strong> {ride.destination}
