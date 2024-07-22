@@ -1,5 +1,4 @@
-/* ridercss.css */
-
+/* General Container Styles */
 .rider-container {
   padding: 80px 20px 20px; /* Adjusted padding to account for the fixed nav bar */
   font-family: 'Roboto', Arial, sans-serif;
@@ -55,21 +54,32 @@ form {
   font-weight: 500;
 }
 
-.form-field input {
+/* Specific styles for the date input field */
+.form-field input[type="date"] {
   padding: 14px;
   border: 2px solid #004d40; /* Dark cyan border */
   border-radius: 10px; /* Slightly rounded corners */
   font-size: 16px; /* Larger font size */
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
   background-color: #e0f2f1; /* Light cyan background */
+  color: #004d40; /* Dark cyan text color */
 }
 
-.form-field input:focus {
+/* Highlight the date input on focus */
+.form-field input[type="date"]:focus {
   border-color: #00796b; /* Teal border on focus */
-  outline: none;
+  background-color: #ffffff; /* White background on focus */
+  color: #004d40; /* Keep text color consistent */
   box-shadow: 0 0 0 3px rgba(0, 121, 107, 0.3); /* Enhanced focus shadow */
 }
 
+/* Add a specific style for labels of date inputs */
+.form-field label[for="date"] {
+  color: #004d40; /* Dark cyan text */
+  font-weight: 500;
+}
+
+/* Style for save button */
 .save-button {
   align-self: flex-end; /* Align button to the right */
   padding: 14px 24px; /* Larger padding for button */
@@ -90,6 +100,7 @@ form {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer style */
 .form-footer {
   margin-top: 20px;
   padding: 10px 0;
