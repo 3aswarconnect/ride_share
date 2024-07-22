@@ -8,7 +8,7 @@ function SharerView() {
   useEffect(() => {
     const fetchRides = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/rides');
+        const response = await axios.get('https://ride-share-backend-1.onrender.com/api/rides');
         setRides(response.data);
       } catch (error) {
         console.error('Error fetching ride details', error);
