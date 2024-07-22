@@ -9,7 +9,9 @@ function SharerView() {
     const fetchRides = async () => {
       try {
         const response = await axios.get('https://ride-share-backend-1.onrender.com/api/rides');
-        setRides(response.data);
+        // Sort rides by creation time in descending order
+        const sortedRides = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        setRides(sortedRides);
       } catch (error) {
         console.error('Error fetching ride details', error);
         alert('Error fetching ride details');
