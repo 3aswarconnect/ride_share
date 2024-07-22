@@ -7,80 +7,80 @@
   justify-content: center;
   align-items: center;
   height: calc(100vh - 80px); /* Adjust height to fit below the nav bar */
-  background-color: #f0f8ff;
+  background-color: #e0f7fa; /* Light cyan background */
 }
 
 .rider-form-container {
   background-color: #ffffff;
-  border: 1px solid #d1d9e6;
-  border-radius: 12px; /* Slightly rounded corners for a modern look */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px; /* Reduced padding for a more balanced look */
+  border: 2px solid #004d40; /* Dark cyan border */
+  border-radius: 16px; /* More rounded corners for a stylish look */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  padding: 30px;
   width: 100%;
-  max-width: 500px; /* Medium width */
+  max-width: 600px; /* Wider width for a more spacious layout */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .rider-form-container:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  transform: translateY(-4px); /* Increased hover effect for better visibility */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-6px); /* Enhanced hover effect */
 }
 
 .rider-form-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
-  font-size: 26px; /* Slightly smaller font size */
+  color: #004d40; /* Dark cyan text */
+  font-size: 28px; /* Larger font size */
   font-weight: 700;
 }
 
 .rider-form-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Reduced gap for a more compact layout */
+  display: grid;
+  gap: 20px; /* Increased gap for a more spacious feel */
 }
 
 .rider-form-container label {
   display: flex;
   flex-direction: column;
-  font-size: 14px; /* Slightly smaller font size */
-  color: #666;
+  font-size: 16px; /* Larger font size */
+  color: #004d40; /* Dark cyan text */
+  font-weight: 500;
 }
 
 .rider-form-container input {
-  padding: 12px;
-  border: 1px solid #d1d9e6;
-  border-radius: 8px;
-  font-size: 14px; /* Slightly smaller font size */
+  padding: 14px;
+  border: 2px solid #004d40; /* Dark cyan border */
+  border-radius: 10px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size */
   transition: border-color 0.3s ease;
-  background-color: #f9f9f9;
+  background-color: #e0f2f1; /* Light cyan background */
 }
 
 .rider-form-container input:focus {
-  border-color: #007bff;
+  border-color: #00796b; /* Teal border on focus */
   outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add focus shadow for better accessibility */
+  box-shadow: 0 0 0 3px rgba(0, 121, 107, 0.3); /* Enhanced focus shadow */
 }
 
 .rider-form-container button {
   display: block;
   margin: 20px auto 0;
-  padding: 12px 20px; /* Slightly reduced padding */
-  background: linear-gradient(to right, #007bff, #0056b3);
+  padding: 14px 24px; /* Larger padding for button */
+  background: linear-gradient(to right, #004d40, #00796b);
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-size: 16px; /* Slightly smaller font size */
+  border-radius: 10px;
+  font-size: 18px; /* Larger font size */
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .rider-form-container button:hover {
-  background: linear-gradient(to right, #0056b3, #003d7a);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, #00796b, #004d40);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive styles */
@@ -94,11 +94,11 @@
   }
 
   .rider-form-container h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .rider-form-container input,
   .rider-form-container button {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
