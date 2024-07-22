@@ -1,5 +1,4 @@
-/* sharecss.css */
-
+/* General Container Styles */
 .share-container {
   padding: 80px 20px 20px; /* Padding adjusted for nav bar */
   font-family: 'Roboto', Arial, sans-serif;
@@ -58,6 +57,18 @@
 .ride-card-row strong {
   color: #333;
   font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+/* Style specifically for the time row */
+.time-row {
+  background-color: #e0f2f1; /* Light cyan background */
+  border-radius: 8px; /* Rounded corners for the time row */
+  padding: 10px;
+}
+
+.ride-time {
+  font-size: 18px; /* Larger font size for time */
+  color: #00796b; /* Teal color for emphasis */
 }
 
 .contact-button {
