@@ -20,6 +20,9 @@
   max-width: 600px; /* Wider width for a more spacious layout */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   position: relative; /* Make sure we can position elements inside */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rider-form-container:hover {
@@ -35,17 +38,10 @@
   font-weight: 700;
 }
 
-.form-description {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #004d40; /* Dark cyan text */
-  font-size: 16px; /* Font size for description */
-  line-height: 1.5; /* Line height for better readability */
-}
-
 form {
   display: grid;
   gap: 20px; /* Increased gap for a more spacious feel */
+  width: 100%; /* Ensure form takes full width */
 }
 
 .form-field {
@@ -94,6 +90,17 @@ form {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.form-footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+  color: #004d40; /* Dark cyan text */
+  font-size: 14px; /* Font size for footer text */
+  border-top: 1px solid #004d40; /* Dark cyan border on top */
+  width: 100%;
+  background-color: #e0f2f1; /* Light cyan background */
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .rider-container {
@@ -108,8 +115,8 @@ form {
     font-size: 24px;
   }
 
-  .form-description {
-    font-size: 14px;
+  .form-footer {
+    font-size: 12px;
   }
 
   .form-field input,
