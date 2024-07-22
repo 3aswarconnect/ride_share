@@ -39,9 +39,7 @@ function RiderForm() {
     <div className="rider-container">
       <div className="rider-form-container">
         <h2>Rider Details</h2>
-        <p className="form-description">
-          Provide your ride details here. This information will help others easily find and connect with you for a smooth ride experience.
-        </p>
+        
         <form onSubmit={handleSubmit}>
           <div className="form-field">
             <label>
@@ -75,6 +73,9 @@ function RiderForm() {
           </div>
           <button type="submit" className="save-button">Save</button>
         </form>
+                <p className="form-description">
+          Provide your ride details here. This information will help others easily find and connect with you for a smooth ride experience.
+        </p>
       </div>
     </div>
   );
