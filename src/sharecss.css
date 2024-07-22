@@ -1,0 +1,100 @@
+/* sharecss.css */
+
+.share-container {
+  padding: 80px 20px 20px; /* Padding adjusted for nav bar */
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: calc(100vh - 80px); /* Adjust height to fit below the nav bar */
+}
+
+.share-container h2 {
+  text-align: center;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+  font-size: 28px; /* Larger font size for prominence */
+  color: #1e272e;
+  font-weight: 700;
+}
+
+.ride-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ride-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d9e6; /* Softer border color */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px; /* Slightly larger card width */
+  text-align: left;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ride-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); /* Enhanced hover effect */
+}
+
+.ride-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ride-card-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px; /* Increased font size for better readability */
+  color: #555; /* Softer text color */
+}
+
+.ride-card-row strong {
+  color: #333;
+  font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+.contact-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px; /* Increased padding for a better button size */
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px; /* Larger font size for better visibility */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+  background: linear-gradient(to right, #0056b3, #003d7a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .share-container {
+    padding: 20px;
+  }
+
+  .share-container h2 {
+    font-size: 24px;
+  }
+
+  .ride-card {
+    padding: 15px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

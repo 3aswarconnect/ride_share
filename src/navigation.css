@@ -1,0 +1,55 @@
+/* navigation.css */
+/* navigation.css */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #e1e5e9;
+    height: 80px; /* Set a fixed height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* The rest of your styles remain unchanged */
+  
+  
+  .navigation h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .nav-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button:hover {
+    background: linear-gradient(90deg, #0056b3, #003d7a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
