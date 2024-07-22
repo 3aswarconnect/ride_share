@@ -38,29 +38,39 @@ function RiderForm() {
   return (
     <div className="rider-container">
       <div className="rider-form-container">
-        <h2>Rider Form</h2>
+        <h2>Rider Details</h2>
         <form onSubmit={handleSubmit}>
-          <label>
-            Bike:
-            <input type="text" name="bike" value={rideDetails.bike} onChange={handleChange} required />
-          </label>
-          <label>
-            Time:
-            <input type="text" name="time" value={rideDetails.time} onChange={handleChange} required />
-          </label>
-          <label>
-            Destination:
-            <input type="text" name="destination" value={rideDetails.destination} onChange={handleChange} required />
-          </label>
-          <label>
-            Fare:
-            <input type="text" name="fare" value={rideDetails.fare} onChange={handleChange} required />
-          </label>
-          <label>
-            Contact Number:
-            <input type="text" name="contactNumber" value={rideDetails.contactNumber} onChange={handleChange} required />
-          </label>
-          <button type="submit">Save</button>
+          <div className="form-field">
+            <label>
+              Bike:
+              <input type="text" name="bike" value={rideDetails.bike} onChange={handleChange} required />
+            </label>
+          </div>
+          <div className="form-field">
+            <label>
+              Time:
+              <input type="text" name="time" value={rideDetails.time} onChange={handleChange} required />
+            </label>
+          </div>
+          <div className="form-field">
+            <label>
+              Destination:
+              <input type="text" name="destination" value={rideDetails.destination} onChange={handleChange} required />
+            </label>
+          </div>
+          <div className="form-field">
+            <label>
+              Fare:
+              <input type="text" name="fare" value={rideDetails.fare} onChange={handleChange} required />
+            </label>
+          </div>
+          <div className="form-field">
+            <label>
+              Contact Number:
+              <input type="text" name="contactNumber" value={rideDetails.contactNumber} onChange={handleChange} required />
+            </label>
+          </div>
+          <button type="submit" className="save-button">Save</button>
         </form>
       </div>
     </div>
