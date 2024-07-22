@@ -21,7 +21,7 @@ function RiderForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/rides', rideDetails);
+      await axios.post('https://ride-share-backend-1.onrender.com/api/rides', rideDetails);
       setRideDetails({
         bike: '',
         time: '',
